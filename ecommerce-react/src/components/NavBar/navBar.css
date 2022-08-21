@@ -1,0 +1,21 @@
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(80, 80, 80);
+    padding: 0 5%;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+
+    
+}
+
+.nav_item{
+    margin: 10px;
+    color: white;
+}
+
+.logo_navBar{
+    margin: 10px;
+    height: 40px;
+}
