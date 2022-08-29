@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
+@import url(./components/Widget/Widget.css);
 
 @import url(./components/NavBar/navBar.css);
 

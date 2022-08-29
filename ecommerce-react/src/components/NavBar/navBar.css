@@ -19,3 +19,8 @@
     margin: 10px;
     height: 40px;
 }
+
+.nav_menu{
+    display: flex;
+    align-items: center;
+}
