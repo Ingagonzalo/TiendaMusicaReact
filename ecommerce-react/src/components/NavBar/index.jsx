@@ -1,6 +1,6 @@
 import Logo from "../Logo/Logo"
 import CartWidget from "../Widget/Widget";
-import Index from "../Title/Index";
+import Index from "../Title/index";
 
 const NavBar = () => {
   return (
