@@ -10,14 +10,14 @@ const ItemCount = ({nameProduct, stock, initial}) => {
             if (ItemCount < stock){
                 setItemCount(ItemCount + 1);
             } else {
-                setItemCount(1)
+                setItemCount(1);
             }
         }
         const restar = () => {
             if (ItemCount > 1){
                 setItemCount(ItemCount - 1);
             } else {
-                setItemCount(stock)
+                setItemCount(stock);
             }
         }
 
