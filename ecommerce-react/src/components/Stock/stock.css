@@ -1,0 +1,37 @@
+.item {
+    padding: 5px;
+    margin: 5px;
+
+    background-color: rgba(56, 56, 56,0.7);
+
+    display: flex;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.card{
+    margin: auto 0;
+}
+
+.imageStock{
+    width: 250px;
+    margin: 20px;
+    height: 400px;
+}
+
+.title{
+    font-size: 32px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: gray;
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+}
+

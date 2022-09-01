@@ -1,0 +1,45 @@
+.counterContainer {
+    display: block;
+    padding: 5px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px rgb(255, 255, 255);
+    height: 50px;
+    padding: 10px;
+    
+}
+
+.itemCountButton {
+    cursor: pointer;
+    font-size: 32px;
+
+}
+
+.itemCountButton:hover{
+    color:rgb(73, 73, 73);
+}
+
+.itemCount {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: rgb(73, 73, 73);
+    border: solid 1px black;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    font-weight: bolder;
+    
+}
