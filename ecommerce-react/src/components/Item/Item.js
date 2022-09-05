@@ -1,5 +1,5 @@
 import React from "react";
-import './stock.css';
+import './Item.css';
 import { useState, useEffect } from "react";
 
 const Stock = () => {
@@ -40,14 +40,14 @@ const Stock = () => {
 
   return (
     <div>
-      {items.map((i) => (
-        <div key={i.id} className="item">
+      {items.map((item) => (
+        <div key={item.id} className="item">
           
-          <img className="imageStock"src={i.image} alt="Guitarra" />
+          <img className="imageStock"src={item.image} alt="Guitarra" />
           <div className="card">
-            <h2 className="title">{i.title}</h2>
-            <p className="description">{i.description}</p>
-            <p className="price">{i.price}</p>
+            <h2 className="title">{item.title}</h2>
+            <p className="description">{item.description}</p>
+            <p className="price">{item.price}</p>
           </div>
         </div>
       ))}
