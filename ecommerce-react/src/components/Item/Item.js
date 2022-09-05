@@ -48,6 +48,7 @@ const Stock = () => {
             <h2 className="title">{item.title}</h2>
             <p className="description">{item.description}</p>
             <p className="price">{item.price}</p>
+            <button>Ver Más...</button>
           </div>
         </div>
       ))}
