@@ -1,7 +1,7 @@
 import React from "react";
 import './Item.css';
 
-const Stock = ({ image, title, description, price }) => {
+const Item = ({ image, title, description, price }) => {
   return (
     <div className="item">
       <img className="imageStock" src={image} alt="Guitarra" />
@@ -15,5 +15,5 @@ const Stock = ({ image, title, description, price }) => {
   );
 };
 
-export default Stock;
+export default Item;
 
