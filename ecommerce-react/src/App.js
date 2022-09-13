@@ -2,27 +2,35 @@ import React from 'react';
 
 import './App.css';
 import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import ItemDetailContainer from './components/ItemDetailContainer/itemDetailContainer';
+import VideoPromocional from './components/VideoPromocional/VideoPromocional';
+import ItemListContainer from './components/Items/ItemListContainer/ItemListContainer';
+import Footer from './components/Footer/Footer';
+
 
 
 function App() {
   return (
-
-    <BrowserRouter>
+<BrowserRouter>
       <div className='App'>
         <div>
-          <NavBar />
-          <ItemDetailContainer/>
+          <NavBar/>
+          
           <Routes>
-           <Route path='/' element={<ItemListContainer/>}></Route>
+            <Route path='/home' element={<VideoPromocional/>}></Route>
+            <Route path='/productos/' element={<ItemDetailContainer/>}></Route>
+            <Route path='/productos/:categoryId' element={<ItemListContainer/>}></Route>
+            <Route path='/productos/:categoryId/:productId' element={<ItemDetailContainer/>}> </Route>
+            
+           
+         
           </Routes>
-            {/*
-            <ItemListContainer></ItemListContainer>*/}
+          <Footer/>
         </div>
       </div>
-    </BrowserRouter>
+</BrowserRouter>
+  
 
 
   );

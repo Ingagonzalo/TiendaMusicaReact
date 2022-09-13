@@ -1,0 +1,57 @@
+.footer_bottom {
+    /*contenedor del footer principal */
+    border-top: 2px solid #6e6e64;
+    border-bottom: 2px solid #6e6e64;
+    background-color: #272727;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%; 
+    margin-top: 30px;
+    height: 250px;}
+  
+  .footer_bottom_redes ul {
+    /*propiedades del ul de las redes */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #272727;
+
+    padding: 0; }
+
+    .footer_bottom_redes ul::marker{
+        color: red;
+    }
+
+  .footer_bottom_redes a {
+    padding: 40px;
+    font-size: 1.6rem;
+    color: #737373; }
+    .footer_bottom_redes a:hover {
+      color: white; }
+  
+ 
+  
+  .footer_bottom_logo img {
+    /*logo principal de las redes */
+    width: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  
+  .footer_bottom_copyright {
+    /* propiedades de la informacion legal */
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: whitesmoke; }
+  
+  .footer_bottom_info a {
+    text-decoration: underline;
+    color: whitesmoke;
+    font-size: .8rem; }
+  
+  .footer_bottom_info:first-of-type {
+    padding-right: 5px;
+    border-right: 2px solid #737373; }
+

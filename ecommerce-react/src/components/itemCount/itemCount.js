@@ -23,13 +23,14 @@ const ItemCount = ({nameProduct, stock, initial}) => {
 
     return (
         <div className="counterContainer">
-            <h4>{nameProduct}:</h4>
+
             <div className="counter">
-                <div className="itemCountButton" onClick={restar}><h4>-</h4></div>
-                <div className="itemCount">{ItemCount}</div>
-                <div className="itemCountButton" onClick={sumar}><h4>+</h4></div>
+                <div className="icon itemCountButton" onClick={restar}><h4>-</h4></div>
+                <div className=" itemCount">{ItemCount}</div>
+                <div className="icon itemCountButton" onClick={sumar}><h4>+</h4></div>
+                <button>Agregar al carrito</button>
             </div>
-            <button>Agregar al carrito</button>
+            
         </div>
     );
 }

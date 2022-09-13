@@ -7,9 +7,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: solid 1px rgb(255, 255, 255);
-    height: 50px;
+    width: 400px;
+
     padding: 10px;
+    color: white;
     
 }
 
@@ -24,8 +25,9 @@
 }
 
 .itemCount {
-    display: flex;
-    align-items: center;
+    border: 2px solid white;
+    padding: 20px;
+    margin: 20px;
 }
 
 button {
@@ -43,3 +45,12 @@ button:hover{
     font-weight: bolder;
     
 }
+
+.icon{
+    margin: 20px;
+
+    color: rgb(255, 201, 190);
+    text-align: center;
+
+}
+

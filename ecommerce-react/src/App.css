@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('./components/Widget/Widget.css');
-
+@import url('./components/ItemDetail/itemDetail.css');
 @import url('./components/NavBar/navBar.css');
+@import url('./components/VideoPromocional/VideoPromocional.css');
+@import url('./components/Footer/Footer.css');
 
 *{
   text-decoration: none;

@@ -1,31 +1,32 @@
-import React, {useEffect, useState} from 'react'
-import ItemDetail from '../ItemDetail/ItemDetail';
+import React, {useEffect, useState}from 'react'
+import ItemDetail from '../ItemDetail/itemDetail'
 
 
+const itemDataDetail = { id: "3", title: "Guitarra eléctrica Schecter C-6 Plus/Deluxe C-6 Plus de tilo see-thru cherry burst con diapasón de palo de rosa", description: "Disfrutá con esta guitarra Schecter C-6 Plus/Deluxe de la conexión con la música. Con este instrumento descubrirás nuevos acordes, entonarás tus canciones y disfrutarás de la vida musical. Explorá, amplificá tu creatividad y desarrollá tu pasión. Material versátil. Su madera de tilo tiene una densidad media lo que proporciona un tono suave con medios enfatizados.",
+price: "$120,000.00", image: "https://http2.mlstatic.com/D_NQ_NP_603291-MLA48681401113_122021-O.webp", };
 
-const prueba = {  id: 1, title: "PRS McCarty 594 Top Ten USA",
-description: "A fines de la década de 1980, Paul Reed Smith llamó a Ted McCarty para consultarle sobre el diseño de guitarras y técnicas de fabricacion. No solo sirvió como mentor, sino que se convirtió en un gran amigo de Paul. En 1994, PRS lanzó la primer McCarty, un instrumento que incorporaba todo el espectro de técnicas y conocimientos que Paul había obtenido de Ted.",
-price: "$86571.00",
-image:
-  "https://y6v8e8y4.rocketcdn.me/wp-content/uploads/2022/04/D_764207-MLA49523221494_032022-F-450x800.jpg"};
+
 
 
 const ItemDetailContainer = () => {
-    const [data, setData] = useState([]);
 
-    useEffect(() => {
-        const getData = new Promise((resolve, reject) => {
-            setTimeout(()=>{
-                resolve(prueba);
-            },2000)
-        });
-        getData.then(res => setData(res))
-    }, [])
+  const [dataDetail, setDataDetail]= useState({});
+
+
+  useEffect(()=>{
+    const getDataDetail = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(itemDataDetail)
+      }, 2000);
+    });
+    getDataDetail.then(res => setDataDetail(res))
+  },[]);
+
 
 
   return (
-    <div><ItemDetail data={data}/></div>
-  );
+    <ItemDetail dataDetail={dataDetail}/>
+  )
 }
 
 export default ItemDetailContainer

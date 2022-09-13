@@ -24,3 +24,24 @@
     display: flex;
     align-items: center;
 }
+
+.logo_navBar{
+    width: 500px;
+}
+
+.activa{
+    border-bottom: 2px solid white;
+}
+
+.inactiva{
+    color: white;
+}
+
+.logoNavBar{
+    width: 30px;
+}
+
+.prueba{
+    display: flex;
+    align-items: center;
+}
