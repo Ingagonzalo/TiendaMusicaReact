@@ -1,5 +1,5 @@
 import './ItemListContainer.css'
-import ItemCount from '../../itemCount/itemCount';
+import ItemCount from '../../ItemCount/ItemCount';
 import ItemList from '../ItemList/ItemList';
 import { useState, useEffect } from 'react'
 import dataList from '../../baseDatos/data';
@@ -21,6 +21,7 @@ const ItemListContainer = () => { /*realizo la promesa */
       }, 2000);
     });
     getData.then(res => {
+      debugger
       const newProducts = res.filter(item=>item.category === categoryId); // filtra todos los elementos del array que cumpla con cierta condicion//
       setData(newProducts) // seteo estos valores que filtre//
      })
