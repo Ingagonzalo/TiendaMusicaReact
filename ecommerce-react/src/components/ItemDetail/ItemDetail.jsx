@@ -1,12 +1,18 @@
 import React from 'react'
 import ItemCount from '../ItemCount/ItemCount';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { CartContext } from '../../Context/useContext';
+import data from '../baseDatos/data'
 
 const ItemDetail = ({dataDetail}) => { /*Exporto como se va a ver */
 const [contador, setContador] = useState("0");
+const {addItem} = useContext(CartContext)
 
     const onAdd = (cantidad)=>{
         setContador(cantidad)
+        addItem(data, cantidad)
     }
 
 
@@ -22,7 +28,9 @@ const [contador, setContador] = useState("0");
         <p className="descriptionDetail">{dataDetail.description}</p>
         <ItemCount nameProduct={dataDetail.title} stock={10} initial={1} onAdd={onAdd} /> 
         <p>Cantidad: {contador}</p>
-        <button>Comprar</button>
+        <Link to={`/cart`} >
+          <button>Comprar</button>
+          </Link>
       </div>
     </div>
   );
