@@ -8,7 +8,7 @@ import VideoPromocional from './components/VideoPromocional/VideoPromocional';
 import ItemListContainer from './components/Items/ItemListContainer/ItemListContainer';
 import Footer from './components/Footer/Footer';
 import { CartProvider } from './Context/useContext';
-import Cart from './Context/Cart';
+import Cart from './Context/Cart/Cart';
 
 
 

@@ -1,7 +1,7 @@
 import { CartContext } from './useContext'
 import { useContext } from 'react'
 
-const Cart = () => {
+const ItemCart = () => {
   const {productCartList, removeItem} = useContext(CartContext);
 
   return (
@@ -13,6 +13,8 @@ const Cart = () => {
                       <>
                           <p>{item.title}</p>
                           <p>{item.quantity}</p>
+                          <p>Precio u.: ${item.price}</p>
+                          <p>Subtotal: ${item.quantity*item.price}</p>
                           <button onClick={()=>removeItem(item.id)}>Remover producto</button>
                       </> 
                   )
@@ -22,4 +24,4 @@ const Cart = () => {
   )
 }
 
-export default Cart
+export default ItemCart
